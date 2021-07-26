@@ -1,0 +1,95 @@
+/* fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Watch Live & Top Banner styles */
+.copa-america{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 677px;
+    background-color: #2D25A0;
+}
+.copa-america-title{
+    /* padding-left: 156px;
+    padding-right: 102px;
+    padding-bottom: 169px;
+    padding-top: 207px; */
+    padding: 207px 102px 169px 156px;
+}
+.copa-america-title .top-heading{
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+    /* margin-top: 0;
+    margin-bottom: 27px; */
+    margin: 0 0 27px 0;
+}
+.copa-america-title .watch-live{
+    width: 168px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    background-color: #E02C6D;
+}
+.copa-america-title .watch-live a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+.copa-america-title .watch-live .fa-arrow-right{
+    margin-left: 8px;
+}
+.copa-america .top-banner{
+    /* padding-right: 141px;
+    padding-top: 153px;
+    padding-bottom: 86px; */
+    padding: 153px 141px 86px 0;
+}
+.top-banner img{
+    width: 556px;
+    height: 438px;
+}
+
+/* ==================
+   top players styles
+   ================== */
+.top-players{
+    margin: 70px 210px 160px 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 426px;
+    padding: 15px 15px 33px 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player .player-image img{
+    width: 300px;
+    height: 256px;
+}
+.player .player-bio .player-name{
+    font-size: 28px;
+    color: #18191F;
+    font-weight: 700;
+    margin: 16px 0 10px 0;
+}
+.player .player-bio .player-info{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #6C6C6C;
+}
