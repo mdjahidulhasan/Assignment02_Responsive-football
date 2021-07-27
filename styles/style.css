@@ -106,7 +106,10 @@ body{
     height: 213px;
     margin: 160px 480px 63px 480px;
 }
-
+.logo-icons-copyright .logo{
+    display: flex;
+    justify-content: center;
+}
 .logo-icons-copyright .logo img{
     width: 100%;
     height: 110px;
@@ -137,4 +140,58 @@ body{
 
 .logo-icons-copyright .copyright{
     font-size: 18px;
+}
+
+/* ================
+    Media Queries
+   ================ */
+
+
+/* Mobile devices */
+
+@media only screen and (min-width: 330px) and (max-width: 688px) {
+    .copa-america{
+        flex-direction: column;
+        min-width: 100%;
+        height: 695px;
+    }
+    .copa-america-title{
+        padding: 0;
+    }
+    .copa-america-title .top-heading{
+        font-size: 36px;
+        width: 278px;
+        height: 138px;
+        margin: 112px 66px 30px 16px;
+    }
+    .copa-america-title .watch-live{
+        margin-left: 16px;
+    }
+    .copa-america .top-banner{
+        padding: 0;
+        margin: 50px -25px 61px -26px;
+    }
+    .top-banner img{
+        width: 329px;
+        height: 260px;
+    }
+    .top-players{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-icons-copyright{
+        width: 100%;
+        height: 213px;
+        margin: 50px 0 150px 0;
+    }
+    .logo-icons-copyright .logo img{
+        width: 80%;
+        height: 90px;
+    }
+    .logo-icons-copyright .social-icons{
+        margin: 20px 0 10px 0;
+    }
 }
