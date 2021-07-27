@@ -103,6 +103,83 @@ body{
     color: #6C6C6C;
 }
 
+/* ==============================
+   Fixtures & Top Scorers styles
+   ============================== */
+
+.fixtures-scorers{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fixtures, .top-scorers{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 70px;
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.fixtures-scorers-heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 55;    
+}
+.matches{
+    width: 450px;
+    height: 200px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    text-align: center;
+}
+.matches .date{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px 0 5px 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #E02C6D;
+}
+.matches .match{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.scorers{
+    width: 450px;
+    height: 200px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+}
+.scorers .scorers-heading{
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+}
+.scorers .scorer{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.goals, .assists{
+    margin: 10px 0 0 0;
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+}
 /* ===============
     footer styles
    =============== */
@@ -180,7 +257,7 @@ body{
     }
     .copa-america .top-banner{
         padding: 0;
-        margin: 50px -25px 61px -26px;
+        margin: 80px -25px 61px -26px;
     }
     .top-banner img{
         width: 329px;
@@ -191,6 +268,48 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .fixtures-scorers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixtures, .top-scorers{
+        width: 80%;
+        height: auto;
+    }
+    .fixtures-scorers-heading{
+        font-size: 24px;
+    }
+    .matches{
+        width: 80%;
+        height: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .matches .date{
+        width: 75px;
+        height: 17.5px;
+        padding: 2.5px;
+        margin: 2.5px 0 2.5px 0;
+        font-size: 12px;
+    }
+    .matches .match{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .scorers{
+        width: 80%;
+        height: auto;
+    }
+    .scorers .scorers-heading{
+        font-size: 18px;
+    }
+    .scorers .scorer{
+        font-size: 14px;
+    }
+    .goals, .assists{
+        font-size: 14px;
     }
     .logo-icons-copyright{
         width: 100%;
@@ -233,11 +352,49 @@ body{
         width: 329px;
         height: 260px;
     }
-
     .top-players{
         margin: 100px 0 80px 0;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
     }
-    
+    .fixtures-scorers{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fixtures, .top-scorers{
+        height: auto;
+    }
+    .fixtures-scorers-heading{
+        font-size: 24px;
+    }
+    .matches{
+        height: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    .matches .date{
+        width: 75px;
+        height: 17.5px;
+        padding: 2.5px;
+        margin: 2.5px 10px 2.5px 60px;
+        font-size: 12px;
+    }
+    .matches .match{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    .scorers{
+        width: 80%;
+        height: auto;
+    }
+    .scorers .scorers-heading{
+        font-size: 18px;
+    }
+    .scorers .scorer{
+        font-size: 14px;
+    }
+    .goals, .assists{
+        font-size: 14px;
+    }
 }
